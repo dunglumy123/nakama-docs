@@ -130,6 +130,6 @@ gameController.sendMessage(“jsonString”)
 
 Mô tả send data
 
-|data|Example|Description
+|Data|Example|Description
 | ------ | ------ | ------ |
 |{ "action": "exit" }|gameController.sendMessage("""{ "action": "exit" }""")|Khi app Ví cần thoát khỏi game
