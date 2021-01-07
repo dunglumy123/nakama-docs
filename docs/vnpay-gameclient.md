@@ -103,6 +103,7 @@ gameController.setOnMessageReceive { jsonString in
 }
 ```
 Mô tả object data trả về
+
 |action|code|Description
 | ------ | ------ | ------ |
 |use-gift|03|Sử dụng quà khi trạng thái ví không hợp lệ (Active A, Active B)
@@ -122,6 +123,13 @@ Dùng để gửi dữ liệu vào game client
 - Return: None
 
 Example Code
+
 ```
 gameController.sendMessage(“jsonString”)
 ```
+
+Mô tả send data
+
+|data|Example|Description
+| ------ | ------ | ------ |
+|{ "action": "exit" }|gameController.sendMessage("""{ "action": "exit" }""")|Khi app Ví cần thoát khỏi game
